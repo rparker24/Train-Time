@@ -1,0 +1,12 @@
+h3 {
+	font-weight: bold;
+}
+
+.form-group {
+	padding: 8px 15px 8px 15px;
+	margin-bottom: 0;
+}
+
+#addTrainBtn {
+	margin: 15px;
+}
