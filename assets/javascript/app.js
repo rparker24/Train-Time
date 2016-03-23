@@ -11,14 +11,14 @@ trainData.on("child_added", function(childSnapshot, prevChildKey){
     var trainStart = childSnapshot.val().start;
     var trainFreq = childSnapshot.val().freq;
 
-    console.log(trainName);
-    console.log(destination);
-    console.log(trainStart);
-    console.log(trainFreq);
+    // --- not complete/working ---
+    // var convertedStartTime = moment(new Date(trainStart));
+    // var timeToNext = currentTime - convertedStartTime;
 
-    var convertedTime = moment(new Date(trainStart).format('HH:mm'));
+    // convertToMins = moment(trainStart).format(mmm);
+    // console.log(convertToMins);
 
-    $("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + trainFreq + "</td><td>" + "###" + "</td><td>" + "###" + "</td></tr>");
+    $("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + trainFreq + "</td><td>" + trainStart + "</td><td>" + "###" + "</td></tr>");
 
 }, function (errorObject) {
       console.log("The read failed: " + errorObject.code);
