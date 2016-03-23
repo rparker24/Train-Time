@@ -13,7 +13,7 @@ trainData.on("child_added", function(childSnapshot, prevChildKey){
 
     // --- not complete/working ---
     // var convertedStartTime = moment(new Date(trainStart));
-    // var timeToNext = currentTime - convertedStartTime;
+    // var minutesAway = moment(currentTime - convertedStartTime).format(mmm);
 
     // convertToMins = moment(trainStart).format(mmm);
     // console.log(convertToMins);
